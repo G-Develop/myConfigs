@@ -1,0 +1,11 @@
+http://feeds.bbci.co.uk/news/world/rss.xml
+
+http://rss.slashdot.org/Slashdot/slashdotMain
+
+https://www.engadget.com/rss.xml
+
+http://rss.sciam.com/ScientificAmerican-Global
+
+https://bugs.archlinux.org/feed.php?feed_type=rss2&project=1
+
+http://rss.nytimes.com/services/xml/rss/nyt/World.xml
