@@ -1,5 +1,9 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
+"to set mouse 
+set mouse=a
+" this is for ejs highlighting:
+au BufNewFile,BufRead *.ejs set filetype=html
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -7,6 +11,28 @@ call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
 
+
+"=====Yggdroot/indentLine=======
+Plugin 'Yggdroot/indentLine'
+let g:indentLine_char = '▏'
+let g:indentLine_enabled = 1
+"==============================
+
+"======================Ultisnips================================
+" Track the engine.
+Plugin 'SirVer/ultisnips'
+
+" Snippets are separated from the engine. Add this if you want them:
+Plugin 'honza/vim-snippets'
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<f3>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+"=================================================================
 
 
 " let Vundle manage Vundle, required
@@ -51,7 +77,8 @@ let g:ale_fixers = {'javascript': ['standard']}
 
 let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
-
+"Spell-check set to F6
+map <F6> :setlocal spell! spelllang=en_us<CR>
 
 inoremap " ""<left>
 inoremap ' ''<left>
@@ -65,8 +92,11 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-imap jj <Esc>
+imap jk <Esc>
+"uncomment below to set number
 set number
+"set relativenumber
+set relativenumber
 set expandtab
 set shiftwidth=2
 set softtabstop=2
@@ -123,9 +153,7 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'ajh17/vimcompletesme'
 filetype plugin on
 set omnifunc=syntaxcomplete#Complete
-Plugin 'Yggdroot/indentLine'
-let g:indentLine_char = '▏'
-let g:indentLine_enabled = 1
+
 
 "Toggle function for NERDTree"
 autocmd StdinReadPre * let s:std_in=1
@@ -146,3 +174,4 @@ let NERDTreeDirArrows = 1
  map <leader>j :wincmd j<CR>
  map <leader>k :wincmd k<CR>
  map <leader>l :wincmd l<CR>
+ Plug 'airblade/vim-gitgutter'
