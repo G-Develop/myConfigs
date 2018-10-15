@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/knightwing/lighthouse/team-kumquat-midterm/styles'
+let g:netrw_dirhist_2='/home/knightwing/lighthouse/React/ReduxSimpleStarter/src/components'
+let g:netrw_dirhist_3='/home/knightwing/.vim'
