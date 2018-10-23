@@ -1,0 +1,4 @@
+2. GNOME settings
+If you want to get rid of all the buttons from all windows, run the following command in Terminal:
+
+gsettings set org.gnome.desktop.wm.preferences button-layout :
