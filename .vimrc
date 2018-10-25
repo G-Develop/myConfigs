@@ -1,7 +1,66 @@
 set nocompatible              " be iMproved, required
 filetype off                  " required
-"to set mouse 
+"to set mouse remove quotes on line below
 set mouse=a
+function! ToggleMouse()
+    " check if mouse is enabled
+    if &mouse == 'a'
+        " disable mouse
+        set mouse=
+    else
+        " enable mouse everywhere
+        set mouse=a
+    endif
+endfunc
+"=========================================================="
+
+
+set clipboard=unnamed  "This will alow to copy to system's clipboard
+""set cursorline
+"=====================HIGHLIGHT SEARCH ===============
+"set hlsearch
+set ignorecase
+set smartcase
+""nnoremap <CR> :nohlsearch<CR><CR>
+noremap <F4> :set hlsearch! hlsearch?<CR>
+hi Search ctermbg=LightGrey
+hi Search ctermfg=White
+
+
+
+""  fun! SearchHighlight()
+""      silent! call matchdelete(b:ring)
+""      let b:ring = matchadd('ErrorMsg', '\c\%#' . @/, 101)
+""  endfun
+""
+""  fun! SearchNext()
+""      try
+""          execute 'normal! ' . 'Nn'[v:searchforward]
+""      catch /E385:/
+""          echohl ErrorMsg | echo "E385: search hit BOTTOM without match for: " . @/ | echohl None
+""      endtry
+""      call SearchHighlight()
+""  endfun
+""
+""  fun! SearchPrev()
+""      try
+""          execute 'normal! ' . 'nN'[v:searchforward]
+""      catch /E384:/
+""          echohl ErrorMsg | echo "E384: search hit TOP without match for: " . @/ | echohl None
+""      endtry
+""      call SearchHighlight()
+""  endfun
+""
+""  " Highlight entry
+""  nnoremap <silent> n :call SearchNext()<CR>
+""  nnoremap <silent> N :call SearchPrev()<CR>
+""
+""  " Use <C-L> to clear some highlighting
+""  nnoremap <silent> <C-L> :silent! call matchdelete(b:ring)<CR>:nohlsearch<CR>:set nolist nospell<CR><C-L>
+"==========================================="
+
+
+
 " this is for ejs highlighting:
 au BufNewFile,BufRead *.ejs set filetype=html
 
@@ -10,6 +69,34 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
+"============EASY MOTION =============
+Plugin 'easymotion/vim-easymotion'
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+"nmap s <Plug>(easymotion-overwin-f)
+nmap fd <Plug>(easymotion-overwin-f)
+" or
+" `s{char}{char}{label}`
+" Need one more keystroke, but on average, it may be more comfortable.
+"nmap s <Plug>(easymotion-overwin-f2)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
+"====================================
+
+"============SNIPMATE==========
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+"=============================
+
+
 
 
 "=====Yggdroot/indentLine=======
@@ -26,34 +113,26 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<f3>"
+let g:UltiSnipsExpandTrigger="<F3>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+"the code below got from stack over flow may not work
+"" YouCompleteMe
+let g:ycm_key_list_previous_completion=['<Up>']
+
+"" Ultisnips
+let g:UltiSnipsExpandTrigger="<c-tab>"
+let g:UltiSnipsListSnippets="<c-s-tab>"
 "=================================================================
 
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
 
 
 " All of your Plugins must be added before the following line
@@ -93,10 +172,13 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
 imap jk <Esc>
+imap jj <Esc>
 "uncomment below to set number
 set number
 "set relativenumber
-set relativenumber
+"set relativenumber
+"the below lets me toggel relative number with f5"
+noremap <F5> :set relativenumber! relativenumber?<CR> 
 set expandtab
 set shiftwidth=2
 set softtabstop=2
