@@ -81,7 +81,7 @@ bindsym $mod+Shift+w layout tabbed
 bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
-bindsym $mod+Shift+space floating toggle
+bindsym $mod+Shift+Return floating toggle
 
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
@@ -236,7 +236,7 @@ exec --no-startup-id "compton -cC"
 exec --no-startup-id nm-applet
 exec --no-startup-id "nitrogen --restore"
 exec --no-startup-id "sleep 2s && kalu"
-exec --no-startup-id "polybar example"
+exec --no-startup-id "polybar mystatus"
 
 ## The below is for the gaps
 for_window [class="^.*"] border pixel 0
@@ -248,8 +248,10 @@ gaps outer 1
 
 bindsym $mod+Shift+d gaps inner current set 10; gaps outer current set 1
 
-bindsym $mod+z			gaps outer current plus 5
-bindsym $mod+Shift+z gaps outer current minus 5
+bindsym $mod+z	gaps inner current plus 5
+bindsym $mod+Shift+z gaps inner current minus 5
+
+
 
 
 
