@@ -1,0 +1,11 @@
+.boxstyle
+{
+	spacing: 10px;
+	margin: 5px;
+}
+
+.notestyle
+{
+	border-radius: 8px;
+	padding: 0px 7px 7px 7px;
+}

@@ -1,0 +1,493 @@
+[global_config]
+  borderless = True
+  dbus = False
+  enabled_plugins = CustomCommandsMenu, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  homogeneous_tabbar = False
+  inactive_color_offset = 0.805555555556
+  scroll_tabbar = True
+  suppress_multiple_term_dialog = True
+  tab_position = hidden
+  title_font = Cantarell 10
+  title_inactive_bg_color = "#1c232b"
+  title_inactive_fg_color = "#888a85"
+  title_receive_bg_color = "#2e3436"
+  title_transmit_bg_color = "#1c232b"
+  title_transmit_fg_color = "#98971a"
+[keybindings]
+  cycle_next = <Primary>Tab
+  cycle_prev = <Primary><Shift>Tab
+  go_down = <Alt>j
+  go_left = <Alt>h
+  go_next = F3
+  go_prev = None
+  go_right = <Alt>l
+  go_up = <Alt>k
+  group_all = None
+  group_all_toggle = <Super>g
+  group_tab = None
+  group_tab_toggle = <Super>t
+  help = None
+  hide_window = F9
+  layout_launcher = None
+  prev_tab = F2
+  rotate_ccw = None
+  rotate_cw = <Primary><Shift>r
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 2036:631
+      size = 853, 470
+      title = MOC [stop]
+      type = Window
+    [[[terminal1]]]
+      command = archey3; bash
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+  [[1Main-X]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1200:242
+      size = 2560, 1413
+      title = MOC [stop]
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1158
+      ratio = 0.822443181818
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 1919
+      ratio = 0.751076320939
+      type = HPaned
+    [[[child4]]]
+      order = 1
+      parent = child2
+      position = 577
+      ratio = 0.5
+      type = VPaned
+    [[[child7]]]
+      order = 1
+      parent = child1
+      position = 1919
+      ratio = 0.751076320939
+      type = HPaned
+    [[[child8]]]
+      order = 0
+      parent = child7
+      position = 416
+      ratio = 0.217345872518
+      type = HPaned
+    [[[terminal10]]]
+      command = echo 10;bash
+      directory = ""
+      order = 1
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = 568f7e58-57b1-409b-a08d-4481fe841acf
+    [[[terminal11]]]
+      command = htop;bash
+      order = 1
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 005b5b12-9128-4a7e-a49b-d748c06f9880
+    [[[terminal3]]]
+      command = vim . ;bash
+      directory = /home/knightwing/lighthouse/FinalProject
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+    [[[terminal5]]]
+      command = newsboat;bash
+      order = 0
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = a9ae36af-a2b0-4f18-9710-b8e1a2ca4f40
+    [[[terminal6]]]
+      command = vtop;bash
+      directory = ""
+      order = 1
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = 4e2858fb-a6da-40eb-8e2c-e7b2438019da
+    [[[terminal9]]]
+      command = tty-clock -C7 -c;bash
+      directory = ""
+      order = 0
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = bdaa5816-3e51-486c-b36c-8dfb683fd66e
+  [[Arch]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 435ba377-874c-4c3e-a0eb-b3292791030e
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1200:242
+      size = 2560, 1413
+      title = knightwing@Arch:~/lighthouse/FinalProject
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1255
+      ratio = 0.891335227273
+      type = VPaned
+    [[[child11]]]
+      order = 1
+      parent = child9
+      position = 1597
+      ratio = 0.70538869258
+      type = HPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 1561
+      ratio = 0.61095890411
+      type = HPaned
+    [[[child4]]]
+      order = 1
+      parent = child2
+      position = 621
+      ratio = 0.4968
+      type = VPaned
+    [[[child5]]]
+      order = 0
+      parent = child4
+      position = 497
+      ratio = 0.500503524673
+      type = HPaned
+    [[[child9]]]
+      order = 1
+      parent = child1
+      position = 290
+      ratio = 0.113502935421
+      type = HPaned
+    [[[terminal10]]]
+      command = ""
+      order = 0
+      parent = child9
+      profile = default
+      type = Terminal
+      uuid = c5afc35a-abc4-487f-b62f-cae188975972
+    [[[terminal12]]]
+      order = 0
+      parent = child11
+      profile = default
+      type = Terminal
+      uuid = c289975d-ace5-4dff-b8e9-cd455c078f16
+    [[[terminal13]]]
+      order = 1
+      parent = child11
+      profile = default
+      type = Terminal
+      uuid = 20e82fa3-21e9-49ef-b887-6f9a15fa156f
+    [[[terminal3]]]
+      order = 0
+      parent = child2
+      profile = default
+      title = Arch
+      type = Terminal
+      uuid = 1870cba7-c3ad-4c5e-82df-d6b18f0d480f
+    [[[terminal6]]]
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 435ba377-874c-4c3e-a0eb-b3292791030e
+    [[[terminal7]]]
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 76cb6190-cf1b-4936-b98d-76f053f306d4
+    [[[terminal8]]]
+      order = 1
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = ec445bd3-f2b1-4277-ad96-40e3cd051401
+  [[Bar2]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 6f63698f-6853-411f-8010-0edd3fd56ba3
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 1200:1419
+      size = 2560, 235
+      title = knightwing@Arch:~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 636
+      ratio = 0.248923679061
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 1288
+      ratio = 0.671532846715
+      type = HPaned
+    [[[terminal2]]]
+      command = tty-clock -C7 -c; bash
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = c79fbdc6-4e85-4846-84c8-b8f7aab197ec
+    [[[terminal4]]]
+      command = ""
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 6f63698f-6853-411f-8010-0edd3fd56ba3
+    [[[terminal5]]]
+      command = htop; bash
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 2151d24d-81a5-4003-96e7-bf12bc6bb69f
+  [[Main]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 1200:242
+      size = 1920, 1177
+      title = MOC [stop]
+      type = Window
+    [[[terminal1]]]
+      command = vim . ; bash
+      directory = /home/knightwing/lighthouse/FinalProject
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+  [[X]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = a9ae36af-a2b0-4f18-9710-b8e1a2ca4f40
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 1200:242
+      size = 2560, 1413
+      title = MOC [stop]
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1243
+      ratio = 0.8828125
+      type = VPaned
+    [[[child2]]]
+      order = 0
+      parent = child1
+      position = 1919
+      ratio = 0.751076320939
+      type = HPaned
+    [[[child4]]]
+      order = 1
+      parent = child2
+      position = 629
+      ratio = 0.508077544426
+      type = VPaned
+    [[[child7]]]
+      order = 1
+      parent = child1
+      position = 1919
+      ratio = 0.751076320939
+      type = HPaned
+    [[[child8]]]
+      order = 0
+      parent = child7
+      position = 374
+      ratio = 0.195402298851
+      type = HPaned
+    [[[terminal10]]]
+      command = echo 10;bash
+      order = 1
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = 568f7e58-57b1-409b-a08d-4481fe841acf
+    [[[terminal11]]]
+      command = htop;bash
+      order = 1
+      parent = child7
+      profile = default
+      type = Terminal
+      uuid = 005b5b12-9128-4a7e-a49b-d748c06f9880
+    [[[terminal3]]]
+      command = vim . ;bash
+      directory = /home/knightwing/lighthouse/FinalProject
+      order = 0
+      parent = child2
+      profile = default
+      type = Terminal
+      uuid = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+    [[[terminal5]]]
+      command = calcurse;bash
+      order = 0
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = a9ae36af-a2b0-4f18-9710-b8e1a2ca4f40
+    [[[terminal6]]]
+      command = vtop;bash
+      order = 1
+      parent = child4
+      profile = default
+      type = Terminal
+      uuid = 4e2858fb-a6da-40eb-8e2c-e7b2438019da
+    [[[terminal9]]]
+      command = tty-clock -C7 -c;bash
+      order = 0
+      parent = child8
+      profile = default
+      type = Terminal
+      uuid = bdaa5816-3e51-486c-b36c-8dfb683fd66e
+  [[vtop]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = d120b164-f4ca-4dcf-a2cc-27faa0c5eca5
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 3120:242
+      size = 640, 1177
+      title = MOC [stop]
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 586
+      ratio = 0.5
+      type = VPaned
+    [[[terminal2]]]
+      command = newsboat;bash
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = a213c23c-cc04-4c8a-9a35-3f0156bcf863
+    [[[terminal3]]]
+      command = vtop; bash
+      order = 1
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = d120b164-f4ca-4dcf-a2cc-27faa0c5eca5
+[plugins]
+  [[CustomCommandsMenu]]
+    [[[Archey3]]]
+      command = archey3
+      enabled = True
+      name = Archey3
+      position = 7
+    [[[Vagrant ssh]]]
+      command = cd && cd lighthouse && vagrant ssh
+      enabled = True
+      name = Vagrant ssh
+      position = 6
+    [[[Vagrant up]]]
+      command = cd ~/lighthouse && vagrant up && vagrant ssh
+      enabled = True
+      name = Vagrant up
+      position = 5
+    [[[clock]]]
+      command = tty-clock -C7 -c
+      enabled = True
+      name = clock
+      position = 2
+    [[[dropdown term]]]
+      command = nohup terminator --name dropdown &
+      enabled = True
+      name = dropdown term
+      position = 4
+    [[[exit]]]
+      command = exit
+      enabled = True
+      name = exit
+      position = 8
+    [[[htop]]]
+      command = htop
+      enabled = True
+      name = htop
+      position = 9
+    [[[i3-conf]]]
+      command = cd && cd .config && cd i3 && vim config
+      enabled = True
+      name = i3-conf
+      position = 3
+    [[[music]]]
+      command = mocp
+      enabled = True
+      name = music
+      position = 0
+    [[[vtop]]]
+      command = vtop
+      enabled = True
+      name = vtop
+      position = 1
+[profiles]
+  [[default]]
+    background_color = "#1c2328"
+    background_darkness = 0.83
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#aaaaaa"
+    custom_command = archey3; bash
+    font = Monospace 11
+    foreground_color = "#ebdbb2"
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False
+  [[Knightwing]]
+    background_color = "#282828"
+    background_type = transparent
+    copy_on_selection = True
+    cursor_color = "#aaaaaa"
+    font = Monospace 11
+    foreground_color = "#ebdbb2"
+    palette = "#282828:#cc241d:#98971a:#d79921:#458588:#b16286:#689d6a:#a89984:#928374:#fb4934:#b8bb26:#fabd2f:#83a598:#d3869b:#8ec07c:#ebdbb2"
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

@@ -1,0 +1,33 @@
+/*-----------------------------------------------------------------------------
+ * @package:    MMOD Panel
+ * @author:     Richard B Winters
+ * @copyright:  2011-2018 Massively Modified, Inc.
+ * @license:    Apache-2.0
+ * @version:    1.1.8
+ *---------------------------------------------------------------------------*/
+.mmod-panel-style-compact {
+  height: 28px;
+}
+
+.mmod-panel-button-icon-style-compact {
+  height: 20px;
+  width: 20px;
+}
+
+.mmod-panel-style-cozy {
+  height: 36px;
+}
+
+.mmod-panel-button-icon-style-cozy {
+  height: 28px;
+  width: 28px;
+}
+
+.mmod-panel-style-comfortable {
+  height: 52px;
+}
+
+.mmod-panel-button-icon-style-comfortable {
+  height: 44px;
+  width: 44px;
+}
