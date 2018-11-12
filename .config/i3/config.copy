@@ -45,23 +45,6 @@ bindsym $mod+d exec --no-startup-id dmenu_run -b
 bindsym $mod+space exec --no-startup-id rofi -show run 
 #bindsym $mod+space exec --no-startup-id rofi -show window run 
 
-##dmenu search script run: 
-#Paste into dmenu
-#    C-y - paste from primary X selection
-#    C-Y - paste from X clipboard
-#bindsym Control+space exec --no-startup-id ~/.config/i3/dmenu_search.sh  #uncomment to use dmenu
-bindsym Control+space exec --no-startup-id ~/.config/i3/rofi_search.sh    #uncomment ot use rofi
-
-
-
-
-
-
-
-
-
-
-
 
 # change focus
 bindsym $mod+h focus left
@@ -220,8 +203,6 @@ for_window [class="Pamac-manager"] floating enable
 for_window [class="gnome-pie-606"] floating enable
 for_window [class="Midori"] floating enable resize set 1100 800
 for_window [class="Gnome-system-monitor"] floating enable
-for_window [class="Chromium"] floating enable resize set 1100 800
-for_window [class="qutebrowser"] floating enable resize set 1100 800
 
 ## Multimedia Keys
 
