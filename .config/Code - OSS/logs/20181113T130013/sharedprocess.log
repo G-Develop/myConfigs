@@ -1,0 +1,52 @@
+[2018-11-13 13:00:16.926] [sharedprocess] [info] main {"machineId":"6c4159e6dcb8ec57dc9e686e991070b1c7fbeb6a99c941bbb6976d655eaadfa0"}
+[2018-11-13 13:00:16.960] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:00:16.969] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:00:16.972] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:00:16.997] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:00:16.999] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:00:17.536] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:00:56.928] [sharedprocess] [info] Starting to clean up unused language packs.
+[2018-11-13 13:05:17.564] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:10:17.575] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:15:17.583] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:20:17.593] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:20:30.464] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:20:30.506] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:20:30.506] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:20:30.508] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:20:30.556] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:20:30.557] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:20:30.559] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:23:39.932] [sharedprocess] [info] Installing extension: color-highlight
+[2018-11-13 13:23:39.934] [sharedprocess] [info] Scanned user extensions: 2
+[2018-11-13 13:23:40.300] [sharedprocess] [info] Downloaded extension: color-highlight /tmp/acf5fd31-5cfd-40a4-91f1-faae1e5a580f
+[2018-11-13 13:23:40.405] [sharedprocess] [info] Extracted extension to /home/knightwing/.vscode-oss/extensions/.naumovs.color-highlight-2.3.0: naumovs.color-highlight-2.3.0
+[2018-11-13 13:23:40.405] [sharedprocess] [info] Renamed to /home/knightwing/.vscode-oss/extensions/naumovs.color-highlight-2.3.0
+[2018-11-13 13:23:40.405] [sharedprocess] [info] Installation completed. naumovs.color-highlight-2.3.0
+[2018-11-13 13:23:40.409] [sharedprocess] [info] Extensions installed successfully: naumovs.color-highlight
+[2018-11-13 13:23:40.545] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:23:40.577] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:23:42.990] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:23:42.992] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:23:42.993] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:23:43.007] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:23:43.160] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:23:43.164] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:23:43.164] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:23:43.205] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:23:43.208] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:23:43.209] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:23:46.062] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:25.693] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:25.704] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:27:36.995] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:36.997] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:36.998] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:37.009] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:27:37.249] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:37.250] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:37.252] [sharedprocess] [info] Scanned user extensions: 3
+[2018-11-13 13:27:37.300] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:27:37.302] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:27:37.305] [sharedprocess] [info] Scanned system extensions: 71
+[2018-11-13 13:27:40.085] [sharedprocess] [info] Scanned user extensions: 3

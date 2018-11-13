@@ -1,0 +1,10 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Atom One Dark",
+    "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+}

@@ -1,0 +1,4 @@
+[Info  - 8:14:50 AM] Using tsserver from: /usr/lib/code/extensions/node_modules/typescript/lib
+[Info  - 8:14:50 AM] Forking TSServer
+PATH: /usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/var/lib/flatpak/exports/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/var/lib/snapd/snap/bin 
+[Info  - 8:14:50 AM] Started TSServer

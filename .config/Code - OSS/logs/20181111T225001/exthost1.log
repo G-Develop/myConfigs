@@ -1,0 +1,18 @@
+[2018-11-11 22:50:02.930] [exthost1] [info] extension host started
+[2018-11-11 22:50:02.939] [exthost1] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:50:02.939] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/debug-auto-launch/out/extension
+[2018-11-11 22:50:02.943] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:50:02.943] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/emmet/dist/extension
+[2018-11-11 22:50:02.964] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:50:02.964] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/git/dist/main
+[2018-11-11 22:50:03.053] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:50:03.053] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/merge-conflict/out/extension
+[2018-11-11 22:50:03.059] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:50:03.059] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/search-rg/out/extension
+[2018-11-11 22:50:03.062] [exthost1] [info] ExtensionService#_doActivateExtension vscodevim.vim {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:50:03.062] [exthost1] [info] ExtensionService#loadCommonJSModule /home/knightwing/.vscode-oss/extensions/vscodevim.vim-0.16.12/out/extension
+[2018-11-11 22:50:03.263] [exthost1] [info] eager extensions activated
+[2018-11-11 22:50:03.274] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2018-11-11 22:50:03.274] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/typescript-language-features/dist/extension
+[2018-11-11 22:52:35.212] [exthost1] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"activationEvent":"onLanguage:typescript"}
+[2018-11-11 22:52:35.212] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/extension-editing/out/extension

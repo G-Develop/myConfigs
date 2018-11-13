@@ -8,9 +8,28 @@
 # i3 config file (v4)
 #
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
+##############################################################################
+#                                  general                                   #
+##############################################################################
 
+# Set mod key (Mod1=<Alt>, Mod4=<Super>)
+# Mod4 = Super key
+# Mod1 = Alt key
 set $mod Mod4
 set $alt Mod1
+
+# Color chooser
+# arch blue 	#1793D1
+# debian red	#D70A53
+# manjaro green #2ECC71
+# plasma green  #18B092
+# matrix green	#00FF00
+# mint green	#5FAA24
+# numix         #C84433
+# ubuntu orange #F37320
+# vertex dark   #2C6FF0
+
+
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -41,25 +60,25 @@ bindsym $mod+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop 
-bindsym $mod+d exec --no-startup-id dmenu_run -b 
-bindsym $mod+space exec --no-startup-id rofi -show run 
+bindsym Control+space exec --no-startup-id dmenu_run -b 
+#bindsym $mod+space exec --no-startup-id rofi -show run 
 #bindsym $mod+space exec --no-startup-id rofi -show window run 
+
+
+bindsym $mod+space exec --no-startup-id rofi -show drun -theme Hanzo ## drun option shows human readable names 
+
+## bindsym $mod+space exec --no-startup-id rofi -show run   ## the run option will show terminal names 
+
+
+
+
 
 ##dmenu search script run: 
 #Paste into dmenu
 #    C-y - paste from primary X selection
 #    C-Y - paste from X clipboard
 #bindsym Control+space exec --no-startup-id ~/.config/i3/dmenu_search.sh  #uncomment to use dmenu
-bindsym Control+space exec --no-startup-id ~/.config/i3/rofi_search.sh    #uncomment ot use rofi
-
-
-
-
-
-
-
-
-
+bindsym $mod+d exec --no-startup-id ~/.config/i3/rofi_search.sh    #uncomment ot use rofi
 
 
 
@@ -138,16 +157,7 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
-# reload the configuration file
-bindsym $mod+Shift+c reload
 
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
-bindsym $mod+Shift+r restart
-
-# exit i3 (logs you out of your X session)
-bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-# lock
-bindsym $mod+Shift+x exec i3lock --color 475263
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -222,6 +232,7 @@ for_window [class="Midori"] floating enable resize set 1100 800
 for_window [class="Gnome-system-monitor"] floating enable
 for_window [class="Chromium"] floating enable resize set 1100 800
 for_window [class="qutebrowser"] floating enable resize set 1100 800
+for_window [class="Easystroke"] floating enable resize set 1100 800
 
 ## Multimedia Keys
 
@@ -270,6 +281,7 @@ exec --no-startup-id "polybar example"
 exec --no-startup-id "easystroke"
 exec --no-startup-id "gnome-pie"
 exec --no-startup-id "~/.screenlayout/hanzo.sh"
+exec --no-startup-id "xbindkeys"
 
 
 ## The below is for the gaps
@@ -323,10 +335,6 @@ bindsym F1  [instance="dropdown"] scratchpad show; move position center
 
 
 
-
-
-
-
 # Restore GNOME's settings
 exec --no-startup-id /usr/libexec/gnome-settings-daemon-localeexec
 
@@ -343,6 +351,13 @@ bindsym Print exec gnome-screenshot
 
 
 
+##############################################################################
+#                            shut down / restart                             #
+##############################################################################
+
+
+# Set shut down, restart and locking features
+bindsym $mod+Shift+Return mode "$mode_system"
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
@@ -356,9 +371,18 @@ mode "$mode_system" {
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }
-bindsym $mod+Pause mode "$mode_system"
 
+# reload the configuration file
+bindsym $mod+Shift+c reload
 
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+
+# lock
+bindsym $mod+Shift+x exec i3lock --color 475263
 
 
 

@@ -1,0 +1,14 @@
+Looking for git in: git
+Using git 2.19.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /home/knightwing/lighthouse/tweeter
+> git status -z -u
+> git rev-parse --show-toplevel
+> git symbolic-ref --short HEAD
+> git rev-parse master
+fatal: not a git repository (or any of the parent directories): .git
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose

@@ -1,0 +1,16 @@
+[2018-11-11 22:14:47.880] [exthost1] [info] extension host started
+[2018-11-11 22:14:47.890] [exthost1] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:14:47.890] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/debug-auto-launch/out/extension
+[2018-11-11 22:14:47.893] [exthost1] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:14:47.893] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/emmet/dist/extension
+[2018-11-11 22:14:47.916] [exthost1] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:14:47.916] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/git/dist/main
+[2018-11-11 22:14:48.008] [exthost1] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:14:48.008] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/merge-conflict/out/extension
+[2018-11-11 22:14:48.014] [exthost1] [info] ExtensionService#_doActivateExtension vscode.search-rg {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:14:48.014] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/search-rg/out/extension
+[2018-11-11 22:14:48.017] [exthost1] [info] ExtensionService#_doActivateExtension vscodevim.vim {"startup":true,"activationEvent":"*"}
+[2018-11-11 22:14:48.017] [exthost1] [info] ExtensionService#loadCommonJSModule /home/knightwing/.vscode-oss/extensions/vscodevim.vim-0.16.12/out/extension
+[2018-11-11 22:14:48.218] [exthost1] [info] eager extensions activated
+[2018-11-11 22:14:48.228] [exthost1] [info] ExtensionService#_doActivateExtension vscode.typescript-language-features {"startup":false,"activationEvent":"onLanguage:javascript"}
+[2018-11-11 22:14:48.228] [exthost1] [info] ExtensionService#loadCommonJSModule /usr/lib/code/extensions/typescript-language-features/dist/extension
