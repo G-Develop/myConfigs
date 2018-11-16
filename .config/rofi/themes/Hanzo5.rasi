@@ -81,7 +81,9 @@ listview {
 element {
   padding: 5px;
   text-color: @text;
-  highlight: bold #50536b; /* darkgrey */
+  /* highlight: bold #50536b; /* darkgrey */  */    
+  highlight:     underline;
+
   border-radius: 3px;
 }
 

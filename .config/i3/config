@@ -60,14 +60,16 @@ bindsym $mod+Shift+q kill
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
 #bindsym $mod+d exec --no-startup-id i3-dmenu-desktop 
-#bindsym Control+space exec --no-startup-id dmenu_run -b #run dmenu showing at the bottom of the screen
+bindsym Control+space exec --no-startup-id dmenu_run -b #run dmenu showing at the bottom of the screen
 #bindsym $mod+space exec --no-startup-id rofi -show run 
 #bindsym $mod+space exec --no-startup-id rofi -show window run 
 
 
-bindsym $mod+space exec --no-startup-id rofi -show drun  -theme Hanzo5 ## drun option shows human readable names 
+bindsym $mod+space exec --no-startup-id rofi -show run  -theme Hanzo5 ## drun option shows human readable names 
 
-bindsym Control+space exec --no-startup-id rofi -show drun  -theme Hanzo ## drun option shows human readable names 
+#bindsym Control+space exec --no-startup-id rofi -show drun  -theme Hanzo ## drun option shows human readable names 
+
+bindsym  $mod+grave exec --no-startup-id rofi -show drun  -theme Hanzo ## drun option shows human readable names 
 
 ## bindsym $mod+space exec --no-startup-id rofi -show run   ## the run option will show terminal names 
 
@@ -80,7 +82,9 @@ bindsym Control+space exec --no-startup-id rofi -show drun  -theme Hanzo ## drun
 #    C-y - paste from primary X selection
 #    C-Y - paste from X clipboard
 #bindsym Control+space exec --no-startup-id ~/.config/i3/dmenu_search.sh  #uncomment to use dmenu
-bindsym $mod+d exec --no-startup-id ~/.config/i3/rofi_search.sh    #uncomment ot use rofi
+#bindsym $mod+d exec --no-startup-id ~/.config/i3/rofi_search.sh    #uncomment ot use rofi
+bindsym shift+space exec --no-startup-id ~/.config/i3/rofi_search.sh    #uncomment to use rofi
+bindsym $mod+d exec --no-startup-id ~/.config/i3/rofi_search_surfraw.sh    #uncomment to use rofi
 
 
 
@@ -175,10 +179,10 @@ mode "resize" {
     bindsym h resize grow width 1 px or 1 ppt
 
     # same bindings, but for the arrow keys
-    bindsym Left resize shrink width 10 px or 10 ppt
-    bindsym Down resize grow height 10 px or 10 ppt
-    bindsym Up resize shrink height 10 px or 10 ppt
-    bindsym Right resize grow width 10 px or 10 ppt
+    bindsym Left resize shrink width 25 px or 25 ppt
+    bindsym Down resize grow height 25 px or 25 ppt
+    bindsym Up resize shrink height 25 px or 25 ppt
+    bindsym Right resize grow width 25 px or 25 ppt
 
     # back to normal: Enter or Escape
     bindsym Return mode "default"
@@ -186,6 +190,10 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+bindsym $mod+Shift+y		exec --no-startup-id i3resize left
+bindsym $mod+Shift+u		exec --no-startup-id i3resize down
+bindsym $mod+Shift+i		exec --no-startup-id i3resize up
+bindsym $mod+Shift+o		exec --no-startup-id i3resize right
 
 set $bg-color            #2f343f
 set $inactive-bg-color   #2f343f
@@ -236,6 +244,30 @@ for_window [class="Chromium"] floating enable resize set 1100 800
 for_window [class="qutebrowser"] floating enable resize set 1100 800
 for_window [class="Easystroke"] floating enable resize set 1100 800
 for_window [class="Leafpad"] floating enable resize set 825 500
+for_window [class="Tilda"] floating enable 
+
+### move floating windows with keys
+bindsym $mod+m mode "move" focus floating
+mode "move" {
+    bindsym $mod+Tab focus right
+
+    bindsym Left  move left 25 px  
+    bindsym Down  move down 25 px 
+    bindsym Up    move up 25 px 
+    bindsym Right move right 25 px 
+
+    bindsym h     move left 25 px
+    bindsym j     move down 25 px
+    bindsym k     move up 25 px
+    bindsym l     move right 25 px
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+
+
+
 
 ## Multimedia Keys
 
@@ -270,9 +302,13 @@ bindsym $mod+F8 exec mocp --next
 bindsym $mod+w exec "/usr/bin/firefox"
 bindsym $mod+n exec "nautilus"
 bindsym Control+Mod1+Delete exec "gnome-system-monitor"
+#bindsym F1 exec xfce4-terminal --drop-down
+bindsym F1 exec --no-startup-id tilix --quake
+
+
 
 # Redirect sound to headphones
-bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
+bindsym $mod+shift+f exec "/usr/local/bin/switch-audio-port"
 
 # Autostart apps
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -331,7 +367,7 @@ for_window [instance="dropdown"] move scratchpad
 for_window [instance="dropdown"] resize set 825 500
 for_window [instance="dropdown"] border pixel 3
 for_window [instance="dropdown"] sticky enable
-bindsym F1  [instance="dropdown"] scratchpad show; move position center
+bindsym F12  [instance="dropdown"] scratchpad show; move position center
 
 
 
@@ -360,7 +396,7 @@ bindsym Print exec gnome-screenshot
 
 
 # Set shut down, restart and locking features
-bindsym $mod+Shift+Return mode "$mode_system"
+#bindsym $mod+Shift+Return mode "$mode_system"
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 mode "$mode_system" {
     bindsym l exec --no-startup-id i3exit lock, mode "default"
@@ -386,7 +422,6 @@ bindsym $mod+Shift+Escape exec "i3-nagbar -t warning -m 'You pressed the exit sh
 
 # lock
 bindsym $mod+Shift+x exec i3lock --color 475263
-
 
 
 

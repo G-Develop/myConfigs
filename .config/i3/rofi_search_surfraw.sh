@@ -1,0 +1,2 @@
+rofi-surfraw-websearch: web search via surfraw
+surfraw -browser=$BROWSER $(sr -elvi | awk -F'-' '{print $1}' | sed '/:/d' | awk '{$1=$1};1' | rofi -theme ribbon -kb-row-select "Tab" -kb-row-tab "Control+space" -hide-scrollbar -color-window "#000000, #000000, #000000" -color-normal "#000000, #1793D1, #000000, #1793D1, #000000" -color-active "#000000, #1793D1, #000000, #1793D1, #000000" -color-urgent "#000000, #1793D1, #000000, #1793D1, #000000" -dmenu -mesg ">>> Tab = Autocomplete" -i -p "websearch ")
