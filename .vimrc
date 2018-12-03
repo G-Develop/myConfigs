@@ -98,6 +98,13 @@ Plugin 'garbas/vim-snipmate'
 
 
 
+"============WINDOW SWAP==========
+"Plugin 'wesQ3/vim-windowswap'
+
+"let g:windowswap_map_keys = 0 "prevent default bindings
+"nnoremap <silent> <leader>yw :call WindowSwap#MarkWindowSwap()<CR>
+"nnoremap <silent> <leader>pw :call WindowSwap#DoWindowSwap()<CR>
+"nnoremap <silent> <leader>ww :call WindowSwap#EasyWindowSwap()<CR>
 
 "=====Yggdroot/indentLine=======
 Plugin 'Yggdroot/indentLine'
@@ -129,6 +136,17 @@ let g:UltiSnipsExpandTrigger="<c-tab>"
 let g:UltiSnipsListSnippets="<c-s-tab>"
 "=================================================================
 
+
+"========JS-BEAUTIFY=============================================
+Plugin 'beautify-web/js-beautify'
+nnoremap <leader>ff :%!js-beautify -j -q -B -f -<CR>
+" this maps js-beautify to < , f f > (if your leader is <,>)
+" so to activate just hit comma then ff and it should work
+" to source your beautify config type the bellow message in the command line:
+"type in terminal=====>  js-beautify --config -f ~/.jsbeautifyrc
+
+
+"==============================================================
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -257,3 +275,52 @@ let NERDTreeDirArrows = 1
  map <leader>k :wincmd k<CR>
  map <leader>l :wincmd l<CR>
  Plug 'airblade/vim-gitgutter'
+
+
+
+
+
+
+
+""============WINDOW SWAP MANUAL==========
+"function! MarkWindowSwap()
+    "let g:markedWinNum = winnr()
+"endfunction
+
+"function! DoWindowSwap()
+    ""Mark destination
+    "let curNum = winnr()
+    "let curBuf = bufnr( "%" )
+    "exe g:markedWinNum . "wincmd w"
+    ""Switch to source and shuffle dest->source
+    "let markedBuf = bufnr( "%" )
+    ""Hide and open so that we aren't prompted and keep history
+    "exe 'hide buf' curBuf
+    ""Switch to dest and shuffle source->dest
+    "exe curNum . "wincmd w"
+    ""Hide and open so that we aren't prompted and keep history
+    "exe 'hide buf' markedBuf 
+"endfunction
+
+"nmap <silent> <leader>mw :call MarkWindowSwap()<CR>
+"nmap <silent> <leader>pw :call DoWindowSwap()<CR>
+
+""============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
