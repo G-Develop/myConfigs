@@ -137,13 +137,9 @@ let g:UltiSnipsListSnippets="<c-s-tab>"
 "=================================================================
 
 
-"========JS-BEAUTIFY=============================================
+"========JS-BEAUTIFY======press comma then f f=======================================
 Plugin 'beautify-web/js-beautify'
 nnoremap <leader>ff :%!js-beautify -j -q -B -f -<CR>
-" this maps js-beautify to < , f f > (if your leader is <,>)
-" so to activate just hit comma then ff and it should work
-" to source your beautify config type the bellow message in the command line:
-"type in terminal=====>  js-beautify --config -f ~/.jsbeautifyrc
 
 
 "==============================================================
