@@ -27,6 +27,20 @@ hi Search ctermbg=LightGrey
 hi Search ctermfg=White
 
 
+"Enable autocompletion for finding files when opening up the sp or vsp split
+"mode
+
+  set wildmode=longest,list,full
+
+
+"Splits open at the bottom 
+  set splitbelow
+
+
+"Splits open at the right
+  set splitright
+
+
 
 ""  fun! SearchHighlight()
 ""      silent! call matchdelete(b:ring)
@@ -137,12 +151,18 @@ let g:UltiSnipsListSnippets="<c-s-tab>"
 "=================================================================
 
 
-"========JS-BEAUTIFY======press comma then f f=======================================
+"========JS-BEAUTIFY=========just hit comma then f twice====================================
 Plugin 'beautify-web/js-beautify'
 nnoremap <leader>ff :%!js-beautify -j -q -B -f -<CR>
-
-
 "==============================================================
+
+
+
+
+
+
+
+
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
